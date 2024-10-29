@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn more about Aespa and its members">
+    <title>Aespalogy - Group & Members</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="headerinner">
+                <a class="headerlogo" href="../aespology/aespology.html">Aespalogy</a> 
+                <nav>
+                    <a class="nav__link" href="../group/group.html">Group & Members</a>
+                    <a class="nav__link" href="../music/music.html">Music</a>
+                    <a class="nav__link" href="../merch/merch.html">Merchandise</a>
+                    <a class="nav__link" href="../cart/cart.html">Cart</a>
+                    <a class="nav__link" href="../news/news.html">Events</a>
+                    <a class="nav__link" href="../faqs/faq.html">FAQS</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+<div class="intro">
+<div class="container">
+    <h2 class="introsuptitle">Group Info</h2>   
+</div>
+</div>
+
+    <section class="group-info">
+        <div class="container">
+            <h2>About Aespa</h2>
+            <p>Aespa (Korean: 에스파) is a South Korean girl group from SM Entertainment. It has four members: Karina, Giselle, Winter, and Ningning. Known for its metaverse concept and hyperpop music, Aespa debuted on November 17, 2020, with "Black Mamba," which set a record for debut views in K-pop. Their follow-up single, "Next Level," was a hit, earning Song of the Year at the Korean Music Awards.
+
+                In October 2021, Aespa released their first EP, Savage, which topped charts in the US and South Korea. Their second EP, Girls, released in July 2022, became the best-selling album by a K-pop girl group and hit number three on the Billboard 200. Their third EP, My World, released in May 2023, sold over two million copies and also reached the top ten on the Billboard 200. In May 2024, they released their first studio album, Armageddon, with the lead single "Supernova" topping charts.</p>
+        </div>
+    </section>
+
+  <div id="theme-toggle">
+    <label class="switch">
+      <input type="checkbox" id="theme-switcher" onclick="toggleTheme()">
+      <span class="slider"></span>
+    </label>
+    <span class="toggle-label">Dark Mode</span>
+  </div>
+  
+      
+    <section class="members">
+        
+        <div class="container">
+            <h2>Meet the Members</h2>
+            
+            <div class="member" tabindex="0">
+                <div class="member-info">
+                    <div class="member-part">
+                        <h3>Karina's Bio <button class="toggle-button" onclick="toggleBio('karina-bio-details', this)"></button></h3>
+                        <p id="karina-bio-details" class="hidden bio-details">
+                            Yu Ji-min (Korean: 유지민; born April 11, 2000), known professionally as Karina, 
+                            is a South Korean singer and rapper. She is the leader of the South Korean girl group Aespa, 
+                            formed by SM Entertainment on November 17, 2020. She is also a member of the supergroup Got the Beat, 
+                            which debuted on January 3, 2022.
+                        </p>
+                    </div>
+                </div>
+                <div class="member-photo">
+                    <img src="assets/images/karina.jpg" alt="Karina">
+                </div>
+            </div>
+            
+            <div class="member" tabindex="0">
+                <div class="member-photo">
+                    <img src="assets/images/giselle.jpg" alt="Giselle">
+                </div>
+                <div class="member-info">
+                    <div class="member-part">
+                        <h3>Giselle's Bio <button class="toggle-button" onclick="toggleBio('giselle-bio-details', this)"></button></h3>
+                        <p id="giselle-bio-details" class="hidden bio-details">
+                            Aeri Uchinaga (内永 枝利, Uchinaga Eri, born October 30, 2000), known professionally as Giselle (지젤), 
+                            is a Japanese singer and rapper based in South Korea. She is a member of the South Korean girl group Aespa, 
+                            formed by SM Entertainment in November 2020.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="member" tabindex="0">
+                <div class="member-info">
+                    <div class="member-part">
+                        <h3>Winter's Bio <button class="toggle-button" onclick="toggleBio('winter-bio-details', this)"></button></h3>
+                        <p id="winter-bio-details" class="hidden bio-details">
+                            Kim Min-jeong (Korean: 김민정; born January 1, 2001), known professionally as Winter, 
+                            is a South Korean singer and dancer. She is a member of the South Korean girl group Aespa 
+                            which debuted under SM Entertainment in November 2020. In January 2022, she became a member 
+                            of the supergroup Got the Beat.
+                        </p>
+                    </div>
+                </div>
+                <div class="member-photo">
+                    <img src="assets/images/winter.jpg" alt="Winter">
+                </div>
+            </div>
+            
+            <div class="member" tabindex="0">
+                <div class="member-photo">
+                    <img src="assets/images/ningning.jpg" alt="Ningning">
+                </div>
+                <div class="member-info">
+                    <div class="member-part">
+                        <h3>Ningning's Bio <button class="toggle-button" onclick="toggleBio('ningning-bio-details', this)"></button></h3>
+                        <p id="ningning-bio-details" class="hidden bio-details">
+                            Ning Yizhuo (Chinese: 宁艺卓; pinyin: Níng Yìzhuó; born October 23, 2002), known professionally 
+                            as Ningning (Korean: 닝닝), is a Chinese singer based in South Korea. She is a member of the South 
+                            Korean girl group Aespa.
+                        </p>
+                    </div>
+                </div>
+            </div>
+             
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Aespalogy. All Rights Reserved.</p>
+            <p>Main Office: 123 K-Pop Street, Seoul, South Korea</p>
+            <div class="creators">
+                <p>Creators:</p>
+                <ul>
+                    <li>Abzal Sydylbek IT-2303</li>
+                    <li>Abay Maral IT-2303</li>
+                    <li>Raiymbek Serikkali IT-2303</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
