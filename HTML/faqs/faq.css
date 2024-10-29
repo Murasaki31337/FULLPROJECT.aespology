@@ -1,0 +1,120 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+    background: url('../faqs/img/aespa-hot-mess-all-members-winter-giselle-ningning-karina-4k-wallpaper-uhdpaper.com-103@0@k.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+*, 
+*:before,
+*:after {
+box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header{
+    padding-top: 30px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffffff;
+    transition: color .2s linear;
+    text-decoration: none;
+}
+.nav {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.nav__link{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    position: relative;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color .1s linear;
+}
+.nav__link:after{
+    content: "";
+    display: block;
+    width: 100%;
+    opacity: 0;
+    height: 3px;
+    background-color: #9fa8ff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    transition: opacity .1s linear;
+}
+.nav__link:hover{
+    color:#9fa8ff;
+}
+.header__logo:hover{
+    color:#9fa8ff;
+}
+.nav__link:hover:after{
+    opacity: 1;
+}
+.section{
+    width: 100%;
+    padding: 80px 0;
+    color: black;
+    background: url();
+}
+.faq__title {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+.accordion__item {
+    margin-bottom: 15px;
+}
+.accordion__header {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2em;
+    text-align: left;
+    cursor: pointer;
+    background: #f1f1f1;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+.accordion__header:hover {
+    background-color: #ddd;
+}
+.accordion__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-color: white;
+    padding: 0 15px;
+}
+.accordion__content p {
+    padding: 15px 0;
+}
+.accordion__content.active {
+    max-height: 200px; /* Adjust according to your content size */
+}
