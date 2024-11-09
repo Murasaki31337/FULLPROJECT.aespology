@@ -24,51 +24,38 @@ const darkMode = localStorage.getItem("darkMode");
 });
 
 function applyFilters() {
-    const priceFilter = document.getElementById("filter-price").value;
-    const typeFilter = document.getElementById("filter-type").value;
-    
-    saveFiltersToStorage(priceFilter, typeFilter);
-    
-    const productCards = document.querySelectorAll(".product-card");
-    productCards.forEach(card => {
-        const price = parseInt(card.querySelector(".product-price").textContent.replace("₸", ""));
-        const type = card.querySelector(".product-title").textContent.toUpperCase();
-        
-        let priceMatch = false;
-        let typeMatch = false;
-        
-        if (priceFilter === "all" || price <= parseInt(priceFilter)) {
-            priceMatch = true;
-        }
-        
-        if (typeFilter === "all" || type.includes(typeFilter)) {
-            typeMatch = true;
-        }
-        
-        if (priceMatch && typeMatch) {
-            card.style.display = "block";
-        } else {
-            card.style.display = "none";
-        }
-    });
-    const noResultsMessage = document.getElementById("no-results-message");
-    noResultsMessage.classList.add("no-results");
-    
-    const othersHeader = document.querySelector("h1#others-header");
-    const albumsHeader = document.querySelector("h1#albums-header");
+  const priceFilter = document.getElementById("filter-price").value;
+  const typeFilter = document.getElementById("filter-type").value;
 
-    if (visibleCount === 0) {
-        noResultsMessage.style.display = "block";
-        othersHeader.style.display = "none";
-        albumsHeader.style.display = "none";
-    } else {
-        noResultsMessage.style.display = "none";
-        othersHeader.style.display = "block";
-        albumsHeader.style.display = "block";
-    }
+  saveFiltersToStorage(priceFilter, typeFilter);
+
+  const productCards = document.querySelectorAll(".product-card");
+  let visibleCount = 0;
+
+  productCards.forEach(card => {
+      const price = parseInt(card.querySelector(".product-price").textContent.replace("₸", ""));
+      const type = card.querySelector(".product-title").textContent.toUpperCase();
+
+      let priceMatch = priceFilter === "all" || price <= parseInt(priceFilter);
+      let typeMatch = typeFilter === "all" || type.includes(typeFilter);
+
+      if (priceMatch && typeMatch) {
+          card.style.display = "block";
+          visibleCount++;
+      } else {
+          card.style.display = "none";
+      }
+  });
+
+  const noResultsMessage = document.getElementById("no-results-message");
+  noResultsMessage.classList.add("no-results");
+
+  if (visibleCount === 0) {
+      noResultsMessage.style.display = "block";
+  } else {
+      noResultsMessage.style.display = "none";
+  }
 }
-
-
 
 
 function saveFiltersToStorage(price, type) {
