@@ -198,8 +198,7 @@ text-align: center;
 }
 .section__header{
     width: 100%;
-    max-width: 950px;
-    margin: 0 auto 40px;
+    margin: 0 auto;
     text-align: center;
 }
 .section__suptitle{
@@ -269,7 +268,8 @@ opacity: .3;
     flex: 1 1 0;
     border-left: 1px solid #ffffff;
     text-align: center;
-    padding: 70px 25px;
+    padding: 60px 25px;
+    width: 100%;
 }
 .stat__item:last-child{
     border-left: 1px solid #ffffff
@@ -293,6 +293,7 @@ opacity: .3;
     flex: 1 1 0;
     padding-left: 90px;
     position: relative;
+    width: 100%;
 }
 .services__icon{
     position: absolute;
