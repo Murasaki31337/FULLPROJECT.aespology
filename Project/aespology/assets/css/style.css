@@ -265,7 +265,6 @@ opacity: .3;
 }
 
 .stat__item{
-    flex: 1 1 0;
     border-left: 1px solid #ffffff;
     text-align: center;
     padding: 60px 25px;
@@ -290,7 +289,6 @@ opacity: .3;
     width: 100%;
 }
 .services__item{
-    flex: 1 1 0;
     padding-left: 90px;
     position: relative;
     width: 33%;
