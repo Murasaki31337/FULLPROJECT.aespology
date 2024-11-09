@@ -269,7 +269,7 @@ opacity: .3;
     border-left: 1px solid #ffffff;
     text-align: center;
     padding: 60px 25px;
-    width: 100%;
+    width: 20%;
 }
 .stat__item:last-child{
     border-left: 1px solid #ffffff
@@ -293,7 +293,7 @@ opacity: .3;
     flex: 1 1 0;
     padding-left: 90px;
     position: relative;
-    width: 100%;
+    width: 33%;
 }
 .services__icon{
     position: absolute;
