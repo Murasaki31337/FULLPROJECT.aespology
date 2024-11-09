@@ -362,3 +362,15 @@ footer {
     height: 50px;
     margin-right: 20px;
 }
+.no-results {
+    font-size: 24px;
+    color: #9fa8ff;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    font-family: "Montserrat", sans-serif;
+    
+    border-radius: 10px;
+}
+
