@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stay updated on Aespa's upcoming events, concerts, and fan meet & greet events.">
+    <title>Aespalogy - Events</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    
+    <header class="header">
+        <div class="container">
+            <div class="headerinner">
+                <a class="headerlogo" href="../aespology/aespology.html">Aespalogy</a> 
+                <nav>
+                    <a class="nav__link" href="../group/group.html">Group & Members</a>
+                    <a class="nav__link" href="../music/music.html">Music</a>
+                    <a class="nav__link" href="../merch/merch.html">Merchandise</a>
+                    <a class="nav__link" href="../cart/cart.html">Cart</a>
+                    <a class="nav__link" href="../news/news.html">Events</a>
+                    <a class="nav__link" href="../faqs/faq.html">FAQS</a>
+                    <a class="nav__link" href="../aespology/profile.html">Profile</a>
+
+
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="intro">
+        <div class="container">
+            <h2 class="introsuptitle">Events</h2>
+        </div>
+    </div>
+
+    <div id="theme-toggle">
+        <label class="switch">
+          <input type="checkbox" id="theme-switcher" onclick="toggleTheme()">
+          <span class="slider"></span>
+        </label>
+        <span class="toggle-label">Dark Mode</span>
+    </div>
+
+    <section class="events">
+        <div class="container">
+            <h2>Upcoming Concerts & Tours</h2>
+            <ul>
+                <li>
+                    <h3>World Tour - North America</h3>
+                    <p>March 5, 2024 - New York, NY</p>
+                </li>
+                <li>
+                    <h3>World Tour - Europe</h3>
+                    <p>April 15, 2024 - London, UK</p>
+                </li>
+                <li>
+                    <h3>World Tour - Asia</h3>
+                    <p>June 10, 2024 - Tokyo, Japan</p>
+                </li>
+                <li>
+                    <h3>Summer Festival</h3>
+                    <p>July 22, 2024 - Seoul, South Korea</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="meet-greet">
+        <div class="container">
+            <h2>Fan Meet & Greet Events</h2>
+            <ul>
+                <li>
+                    <h3>Exclusive Fan Meet & Greet</h3>
+                    <p>March 6, 2024 - New York, NY</p>
+                </li>
+                <li>
+                    <h3>Fan Interaction Event</h3>
+                    <p>April 16, 2024 - London, UK</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="countdowns">
+        <div class="container">
+            <h2>Event Countdowns</h2>
+            <div class="countdown">
+                <h3>World Tour - North America</h3>
+                <p id="countdown-1" class="countdown-timer"></p>
+            </div>
+            <div class="countdown">
+                <h3>Fan Meet & Greet - New York</h3>
+                <p id="countdown-2" class="countdown-timer"></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="current-date-time">
+        <div class="container">
+            <div id="greeting"></div>
+            <p id="date-time"></p>
+        </div>
+    </section>
+
+    <section class="map">
+        <div class="container">
+            <h2>Interactive Map</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.797842977035!2d-122.41941858468166!3d37.77492927975957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808d07a6a9d7%3A0x6d9e6d92ec9fd6ef!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sin!4v1632784063861!5m2!1sen!2sin" width="100%" height="450" style="border:5px solid black; border-radius: 1.2%;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    
+    <div id="weather-container">
+        <h1>Weather in Event City</h1>
+        <form id="weather-form" onsubmit="event.preventDefault(); getWeather();">
+            <input type="text" id="city" placeholder="Enter city name" />
+            <button type="submit">Get Weather</button>
+        </form>
+        <div id="weather-result"></div>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+    <script src="../localstorage/ls.js"></script>
+</body>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 Aespalogy. All Rights Reserved.</p>
+        <p>Main Office: 123 K-Pop Street, Seoul, South Korea</p>
+        <div class="creators">
+            <p>Creators:</p>
+            <ul>
+                <li>Abzal Sydylbek IT-2303</li>
+                <li>Abay Maral IT-2303</li>
+                <li>Raiymbek Serikkali IT-2303</li>
+            </ul>
+        </div>
+    </div>	
+</footer>
+
+</html>
