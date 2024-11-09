@@ -262,6 +262,7 @@ opacity: .3;
 }
 .stat{
     display: flex;
+    width: 100%;
 }
 
 .stat__item{
@@ -286,6 +287,7 @@ opacity: .3;
 
 .services{
     display: flex;
+    width: 100%;
 }
 .services__item{
     flex: 1 1 0;
