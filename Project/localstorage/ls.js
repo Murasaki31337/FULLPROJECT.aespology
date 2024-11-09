@@ -51,7 +51,25 @@ function applyFilters() {
             card.style.display = "none";
         }
     });
+    const noResultsMessage = document.getElementById("no-results-message");
+    noResultsMessage.classList.add("no-results");
+    
+    const othersHeader = document.querySelector("h1#others-header");
+    const albumsHeader = document.querySelector("h1#albums-header");
+
+    if (visibleCount === 0) {
+        noResultsMessage.style.display = "block";
+        othersHeader.style.display = "none";
+        albumsHeader.style.display = "none";
+    } else {
+        noResultsMessage.style.display = "none";
+        othersHeader.style.display = "block";
+        albumsHeader.style.display = "block";
+    }
 }
+
+
+
 
 function saveFiltersToStorage(price, type) {
     localStorage.setItem("priceFilter", price);
